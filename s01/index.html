@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor</title>
+</head>
+<body>
+    <script>
+        //console.log('hola mundo')
+        var arr_global = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        var obj_global = {
+            'a': 10,
+            'b': 20,
+            'c': 30,
+            'd': 40,
+            'e': 50
+        };
+        var a = function(arr_entrada){
+            var total = 0;
+            for(var i = 0; i < arr_entrada.length; i++){
+                total += arr_entrada[i];
+            }
+            return total;
+        };
+        var b = function(arr_entrada, valor){
+            var encontrado = false;
+            for(var i = 0; i < arr_entrada.length; i++){
+                if (arr_entrada[i] === valor){
+                    encontrado = true;
+                }
+            }
+            return encontrado;
+        };
+        var c = function(obj_entrada){
+            var total = 0;
+            for (var llave in obj_entrada){
+                total += obj_entrada[llave];
+            }
+            return total;
+        }
+        var d = function(obj_entrada, valor){
+            var encontrado = false;
+            for (var llave in obj_entrada){
+                if (obj_entrada[llave] === valor){
+                    encontrado = true;
+                }
+            }
+            return encontrado;
+        };
+        var e = function(arr_entrada){
+            var arr_temporal = [];
+            for(var i = 0; i < arr_entrada.length; i++){
+                arr_temporal[i] = arr_entrada[i];
+            }
+            return arr_temporal;
+        };
+        var f = function(obj_entrada){
+            var obj_temporal = {};
+            for(var llave in obj_entrada){
+                obj_temporal[llave] = obj_entrada[llave];
+            }
+            return obj_temporal;
+        };
+    </script>
+</body>
+</html>
