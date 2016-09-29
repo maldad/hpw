@@ -1,0 +1,11 @@
+Arreglo.filter(function(autor) {
+  return (autor.nombre === "AA");},
+  Biblioteca.autores)
+
+var con_nombre = function(arr_autores, nombre) {
+  return Arreglo.filter(function(autor) {
+    return (autor.nombre === nombre);
+  }, arr_autores)
+};
+
+Imprimir.autores(con_nombre(Biblioteca.autores, "AB"));
