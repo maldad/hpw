@@ -3,11 +3,21 @@ var Biblioteca = (function () {
         "autores": [
         {
             "id": 10,
-            "nombre": "Agus Vama"
+            "nombre": "Agus",
+            "apellido_paterno": "Vasquez",
+            "apellido_materno": "Martinez"
         },
         {
             "id": 20,
-            "nombre": "R2D2"
+            "nombre": "Agustin",
+            "apellido_paterno": "",
+            "apellido_materno": ""
+        },
+        {
+            "id": 30,
+            "nombre": "Agustin",
+            "apellido_paterno": "",
+            "apellido_materno": ""
         }
         ],
         "libros": [
@@ -26,12 +36,21 @@ var Biblioteca = (function () {
             "publicacion": "...",
             "editorial": "...",
             "genero": "...",
+        },
+        {
+            "id": 102,
+            "titulo": "...",
+            "isbn": "...",
+            "publicacion": "...",
+            "editorial": "...",
+            "genero": "...",
         }
         ],
         "autorlibros": 
         {
-            "10": [100, 101],
-            "20": [101]
+            "10": [],
+            "20": [],
+            "30": []
         }
     };
     return {
