@@ -3,54 +3,54 @@ var Biblioteca = (function () {
         "autores": [
         {
             "id": 10,
-            "nombre": "Agus",
-            "apellido_paterno": "Vasquez",
-            "apellido_materno": "Martinez"
+            "nombre": "George Raymond Richard",
+            "apellido_paterno": "Martin",
+            "apellido_materno": ""
         },
         {
             "id": 20,
-            "nombre": "Agustin",
-            "apellido_paterno": "",
+            "nombre": "John Ronald Reuel",
+            "apellido_paterno": "Tolkien",
             "apellido_materno": ""
         },
         {
             "id": 30,
-            "nombre": "Agustin",
-            "apellido_paterno": "",
+            "nombre": "Herman",
+            "apellido_paterno": "Melville",
             "apellido_materno": ""
         }
         ],
         "libros": [
         {
             "id": 100,
-            "titulo": "...",
-            "isbn": "...",
-            "publicacion": "...",
-            "editorial": "...",
-            "genero": "...",
+            "titulo": "Moby-Dick",
+            "isbn": "",
+            "publicacion": "1851",
+            "editorial": "Richard Bentley",
+            "genero": "Novela",
         },
         {
             "id": 101,
-            "titulo": "...",
-            "isbn": "...",
-            "publicacion": "...",
-            "editorial": "...",
-            "genero": "...",
+            "titulo": "El Señor de los Anillos",
+            "isbn": "",
+            "publicacion": "1954",
+            "editorial": "George Allen & Unwim",
+            "genero": "Novela",
         },
         {
             "id": 102,
-            "titulo": "...",
-            "isbn": "...",
-            "publicacion": "...",
-            "editorial": "...",
-            "genero": "...",
+            "titulo": "Choque de reyes",
+            "isbn": "",
+            "publicacion": "1998",
+            "editorial": "Bantam Spectra",
+            "genero": "Novela",
         }
         ],
         "autorlibros": 
         {
-            "10": [],
-            "20": [],
-            "30": []
+            "10": [102],
+            "20": [101],
+            "30": [100]
         }
     };
     return {
