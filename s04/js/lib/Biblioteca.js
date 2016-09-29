@@ -3,11 +3,11 @@ var Biblioteca = (function () {
         "autores": [
         {
             "id": 10,
-            "nombre": "AA"
+            "nombre": "Agus Vama"
         },
         {
             "id": 20,
-            "nombre": "AB"
+            "nombre": "R2D2"
         }
         ],
         "libros": [
