@@ -18,6 +18,36 @@ var Biblioteca = (function () {
             "nombre": "Herman",
             "apellido_paterno": "Melville",
             "apellido_materno": ""
+        },
+        {
+            "id": 40,
+            "nombre": "Miguel",
+            "apellido_paterno": "de Cervantes",
+            "apellido_materno": "Saavedra"
+        },
+        {
+            "id": 50,
+            "nombre": "Gabriel",
+            "apellido_paterno": "Garcia",
+            "apellido_materno": "Marquez"
+        },
+        {
+            "id": 60,
+            "nombre": "Howard Phillips",
+            "apellido_paterno": "Lovecraft",
+            "apellido_materno": ""
+        },
+        {
+            "id": 70,
+            "nombre": "Antoine",
+            "apellido_paterno": "de Saint-Exupery",
+            "apellido_materno": ""
+        },
+        {
+            "id": 80,
+            "nombre": "Nicolas",
+            "apellido_paterno": "Maquiavelo",
+            "apellido_materno": ""
         }
         ],
         "libros": [
@@ -44,13 +74,47 @@ var Biblioteca = (function () {
             "publicacion": "1998",
             "editorial": "Bantam Spectra",
             "genero": "Novela",
+        },
+        {
+            "id": 105,
+            "titulo": "Juego de tronos",
+            "isbn": "",
+            "publicacion": "1996",
+            "editorial": "Bantam Spectra",
+            "genero": "Novela",
+        },
+        {
+            "id": 106,
+            "titulo": "Tormenta de espadas",
+            "isbn": "",
+            "publicacion": "2000",
+            "editorial": "Bantam Spectra",
+            "genero": "Novela",
+        },
+        {
+            "id": 103,
+            "titulo": "El principito",
+            "isbn": "",
+            "publicacion": "1943",
+            "editorial": "Reynal & Hitchcock",
+            "genero": "Novela",
+        },
+        {
+            "id": 104,
+            "titulo": "El principe",
+            "isbn": "",
+            "publicacion": "1532",
+            "editorial": "",
+            "genero": "Tratado",
         }
         ],
         "autorlibros": 
         {
-            "10": [102],
+            "10": [102, 105, 106],
             "20": [101],
-            "30": [100]
+            "30": [100],
+            "70": [103],
+            "80": [104]
         }
     };
     return {

@@ -11,7 +11,10 @@ var Imprimir = (function() {
     var libros = function(arr_libros){
         for(var i = 0; i < arr_libros.length; i++){
             console.log("ID: " + arr_libros[i].id);
-            console.log("Nombre: " + arr_libros[i].titulo);
+            console.log("Titulo: " + arr_libros[i].titulo);
+            console.log("Publicacion: " + arr_libros[i].publicacion)
+            console.log("Editorial: " + arr_libros[i].editorial)
+            console.log("Genero: " + arr_libros[i].genero)
             console.log("-----------------------------");
         }
     }
