@@ -1,0 +1,15 @@
+-> agregar busquedas por:
+    nombre
+    apellido paterno
+    apellido materno
+    (usando regex)
+    (debido a que algunos apellidos y nombres tienen acentos)
+-> tambien por:
+    titulo libro
+    isbn
+    genero
+    año
+
+Correcciones:
+-> ISBN, debe ser real
+-> dejar solamente 1 género, en minúsculas

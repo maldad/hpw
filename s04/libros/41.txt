@@ -1,0 +1,27 @@
+  {
+    "id": 121,
+    "titulo": "independecia de mexico",
+    "isbn": "123-456-789-987-7",
+    "publicacion": "2000",
+    "editorial": "independiente",
+    "genero": "trama"
+  },
+    {
+    "id": 122,
+    "titulo": "Vida de Porfirio Diaz",
+    "isbn": "987-789-456-546-1",
+    "publicacion": 1995,
+    "editorial": "Mexicano",
+    "genero": "historia"
+  },
+   {
+    "id": 123,
+    "titulo": "los relatos de Andres",
+    "isbn": "741-258-963-7",
+    "publicacion": 1996,
+    "editorial": "Roger's",
+    "genero": "cuento"
+  },
+   
+
+

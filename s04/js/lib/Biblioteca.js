@@ -3,113 +3,384 @@ var Biblioteca = (function () {
         "autores": [
         {
             "id": 10,
-            "nombre": "George Raymond Richard",
-            "apellido_paterno": "Martin",
-            "apellido_materno": ""
+            "nombre": "Antonio",
+            "apellido": {
+                "paterno": "Hernández",
+                "materno": "Blas"
+            },
+            "libros": [100, 101]
+        },
+        {
+            "id": 11,
+            "nombre": "Gonzalo",
+            "apellido": {
+                "paterno": "Mendoza",
+                "materno": "Garcia"
+            },
+            "libros": []
+        },
+        {
+            "id": 12,
+            "nombre": "Agustin",
+            "apellido": {
+                "paterno": "Vasquez",
+                "materno": "Martinez"
+            },
+            "libros": [103, 104, 105]
+        },
+        {
+            "id": 13,
+            "nombre": "Cristopher",
+            "apellido": {
+                "paterno": "Gomez",
+                "materno": "Oseguera"
+            },
+            "libros": [106,108]
+        },
+        {
+            "id": 14,
+            "nombre": "Omar",
+            "apellido": {
+                "paterno": "Carrasco",
+                "materno": "Lopez"
+            },
+            "libros": [109,110,111]
+        },
+        {
+            "id": 15,
+            "nombre": "Erick",
+            "apellido": {
+                "paterno": "Garcia",
+                "materno": "Perez"
+            },
+            "libros": [109,111]
+        },
+        {
+            "id": 16,
+            "nombre": "Jesus Alejandro",
+            "apellido": {
+                "paterno": "Pablo",
+                "materno": "Ojeda"
+            },
+            "libros": [115,116,117]
+        },
+        {
+            "id": 17,
+            "nombre": "Arturo Vladimir",
+            "apellido": {
+                "paterno": "Vasquez",
+                "materno": "Sierra"
+            },
+            "libros": [118,119,120]
+        },
+        {
+            "id": 18,
+            "nombre": "Adolfo Adan",
+            "apellido": {
+                "paterno": "Jarquin",
+                "materno": "Lara"
+            },
+            "libros": [115,110]
+        },
+        {
+            "id": 19,
+            "nombre": "WIlfrido",
+            "apellido": {
+                "paterno": "Santos",
+                "materno": "Lopez"
+            },
+            "libros": [112,125]
         },
         {
             "id": 20,
-            "nombre": "John Ronald Reuel",
-            "apellido_paterno": "Tolkien",
-            "apellido_materno": ""
+            "nombre": "Diego",
+            "apellido": {
+                "paterno": "Velasco",
+                "materno": "Cruz"
+            },
+            "libros": [112,125]
         },
         {
-            "id": 30,
-            "nombre": "Herman",
-            "apellido_paterno": "Melville",
-            "apellido_materno": ""
-        },
-        {
-            "id": 40,
-            "nombre": "Miguel",
-            "apellido_paterno": "de Cervantes",
-            "apellido_materno": "Saavedra"
-        },
-        {
-            "id": 50,
-            "nombre": "Gabriel",
-            "apellido_paterno": "Garcia",
-            "apellido_materno": "Marquez"
-        },
-        {
-            "id": 60,
-            "nombre": "Howard Phillips",
-            "apellido_paterno": "Lovecraft",
-            "apellido_materno": ""
-        },
-        {
-            "id": 70,
-            "nombre": "Antoine",
-            "apellido_paterno": "de Saint-Exupery",
-            "apellido_materno": ""
-        },
-        {
-            "id": 80,
-            "nombre": "Nicolas",
-            "apellido_paterno": "Maquiavelo",
-            "apellido_materno": ""
+            "id": 21,
+            "nombre": "Rogelio",
+            "apellido": {
+                "paterno": "Daniel",
+                "materno": "Olivera"
+            },
+            "libros": [131,132]
         }
         ],
         "libros": [
         {
-            "id": 100,
+            "id":100,
+            "titulo":"Las batallas en el desierto",
+            "isbn":"6074450552",
+            "publicacion": "1998",
+            "editorial":"ERA",
+            "genero":"Novela contemporánea"
+        },
+        {
+            "id":101,
+            "titulo":"EL laberinto de la soledad",
+            "isbn":"968-16-1643-X",
+            "publicacion":"1950",
+            "editorial":"Fondo de Cultura Económica",
+            "genero":"Didactico"
+        },
+        {
+            "id":102,
+            "titulo":"La llama doble",
+            "isbn":"978-6070720451",
+            "publicacion": "1993",
+            "editorial":"SEIX BARRAL",
+            "genero":"Didactico"
+        },
+        {
+            "id": 103,
             "titulo": "Moby-Dick",
-            "isbn": "",
+            "isbn": "1289378239",
             "publicacion": "1851",
             "editorial": "Richard Bentley",
             "genero": "Novela",
         },
         {
-            "id": 101,
+            "id": 104,
             "titulo": "El Señor de los Anillos",
-            "isbn": "",
+            "isbn": "1020398",
             "publicacion": "1954",
             "editorial": "George Allen & Unwim",
             "genero": "Novela",
         },
         {
-            "id": 102,
+            "id": 105,
             "titulo": "Choque de reyes",
-            "isbn": "",
+            "isbn": "28129300",
             "publicacion": "1998",
             "editorial": "Bantam Spectra",
             "genero": "Novela",
         },
         {
-            "id": 105,
-            "titulo": "Juego de tronos",
-            "isbn": "",
-            "publicacion": "1996",
-            "editorial": "Bantam Spectra",
-            "genero": "Novela",
+            "id":106,
+            "titulo":"Don quijote de la mancha",
+            "isbn":"60744501423",
+            "publicacion":"1980",
+            "editorial":"",
+            "genero":"Novela"
         },
         {
-            "id": 106,
-            "titulo": "Tormenta de espadas",
-            "isbn": "",
+            "id":107,
+            "titulo":"EL laberinto de la soledad",
+            "isbn":"968-16-16431434",
+            "publicacion":"2004",
+            "editorial":"Trillas",
+            "genero":"Historia"
+        },
+        {
+            "id":108,
+            "titulo":"La Tierra Gira",
+            "isbn":"978-6070720376",
+            "publicacion":"2013",
+            "editorial":"Trillas",
+            "genero":"Geografia"
+        },        
+        {
+            "id": 109,
+            "titulo": "EL ALQUIMISTA",
+            "isbn": "9789707802971",
+            "publicacion": "1988",
+            "editorial": "GRIJALBO",
+            "genero": "MISION"
+        },
+        {
+            "id": 110,
+            "titulo": "LOS HORNOS DE HITLER",
+            "isbn": "9786070721786",
+            "publicacion": "1961",
+            "editorial": "BOOKET",
+            "genero": "EPICO"
+        },
+        {
+            "id": 111,
+            "titulo": "CABALLO DE TROYA 1",
+            "isbn": "9788408064626",
+            "publicacion": "2005",
+            "editorial": "PLANETA",
+            "genero": "NOVELA"
+        },
+        {
+            "id":112,
+            "titulo":"Fundamentos de Administracion",
+            "isbn":"978-968-24-7785-0",
+            "publicacion":"2009",
+            "editorial":"Trillas",
+            "genero":"Academico"
+        },
+        {
+            "id":113,
+            "titulo":"Sistemas Operativos Modernos",
+            "isbn":"968-880-323-5",
+            "publicacion":"1992",
+            "editorial":"Prentice-Hall Mexico",
+            "genero":"Academico"
+        },
+        {
+            "id":114,
+            "titulo":"El viejo y el mar",
+            "isbn":"970-666-022-4",
+            "publicacion":"2005",
+            "editorial":"Tomo",
+            "genero":"Literario"
+        },
+        {
+            "id": 115,
+            "titulo": "La naranja mecanica",
+            "isbn": "978-607-07-0156-6",
+            "publicacion": 1962,
+            "editorial": "Minotauro",
+            "genero": "Ciencia Ficcion" 
+        },
+        {
+            "id": 116,
+            "titulo": "Cien años de soledad",
+            "isbn": "978-842-047-183-9",
+            "publicacion": 1967,
+            "editorial": "Diana",
+            "genero": "Realismo magico" 
+        },
+        {
+            "id": 117,
+            "titulo": "Alexandros",
+            "isbn": "978-970-810-355-8",
+            "publicacion": 1998,
+            "editorial": "Montena",
+            "genero": "Novela Historica" 
+        },
+        {
+            "id": 118,
+            "titulo": "Caida libre",
+            "isbn": "9788430615902",
+            "publicacion": 2010,
+            "editorial": "Taurus",
+            "genero": "Novela"
+        },
+        {
+            "id": 119,
+            "titulo": "Insurgente",
+            "isbn": "9788427203181",
+            "publicacion": 2012,
+            "editorial": "Molino",
+            "genero": "Novela"
+        },
+        {
+            "id": 120,
+            "titulo": "Juego de Tronos",
+            "isbn": "9788496208964",
+            "publicacion": 2012,
+            "editorial": "Gigamesh",
+            "genero": "Novela"
+        },
+        {
+            "id": 121,
+            "titulo": "independecia de mexico",
+            "isbn": "123-456-789-987-7",
             "publicacion": "2000",
-            "editorial": "Bantam Spectra",
-            "genero": "Novela",
+            "editorial": "independiente",
+            "genero": "trama"
         },
         {
-            "id": 103,
-            "titulo": "El principito",
-            "isbn": "",
-            "publicacion": "1943",
-            "editorial": "Reynal & Hitchcock",
-            "genero": "Novela",
+            "id": 122,
+            "titulo": "Vida de Porfirio Diaz",
+            "isbn": "987-789-456-546-1",
+            "publicacion": 1995,
+            "editorial": "Mexicano",
+            "genero": "historia"
         },
         {
-            "id": 104,
-            "titulo": "El principe",
-            "isbn": "",
-            "publicacion": "1532",
-            "editorial": "",
-            "genero": "Tratado",
-        }
+            "id": 123,
+            "titulo": "los relatos de Andres",
+            "isbn": "741-258-963-7",
+            "publicacion": 1996,
+            "editorial": "Roger's",
+            "genero": "cuento"
+        },
+        {
+            "id":124,
+            "titulo":"La revolucion mesmerica",
+            "isbn":"123-342-576-875-2",
+            "publicacion":"2004",
+            "editorial":"oaxacar",
+            "genero":"misterio"
+        },
+        {
+            "id":125,
+            "titulo":"IT",
+            "isbn":"999-445-357-246-3",
+            "publicacion":"2002",
+            "editorial":"Eso",
+            "genero":"terror"
+        },
+        {
+            "id":126,
+            "titulo":"Misericordiae Voltus",
+            "isbn":"978-607-714-145-7",
+            "publicacion":"2015",
+            "editorial":"San Pablo",
+            "genero":"Religion"
+        },   
+        {
+            "id":127,
+            "titulo":"Tokyo Blues",
+            "isbn":"C287364",
+            "publicacion": 2003,
+            "editorial":"Jisho",
+            "genero":["Drama","Suspenso"]
+        },
+        {
+            "id":128,
+            "titulo":"El principito",
+            "isbn":"X193485",
+            "publicacion": 1980,
+            "editorial":"Jcrox",
+            "genero":["Drama"]
+        },
+        {
+            "id":129,
+            "titulo":"El código de Da Vinci",
+            "isbn":"A192736",
+            "publicacion": 1987,
+            "editorial":"Socrax",
+            "genero":["Drama"]
+        },
+        {
+            "id": 130,
+            "titulo":"Fudación",
+            "isbn":"9788499083209",
+            "publicacion":"1952",
+            "editorial":"De Bolsillo",
+            "genero":"ficcion"
+        },
+
+        {
+            "id": 131,
+            "titulo":"El gran diseño",
+            "isbn":"9788498921724",
+            "publicacion":"2010",
+            "editorial":"Bantam Books",
+            "genero":"ciencia"
+        },
+
+        {
+            "id": 132,
+            "titulo":"Un pacto con el diablo",
+            "isbn":"9789681660369",
+            "publicacion":"1999",
+            "editorial":"S.L. FONDO DE CULTURA ECONOMICA DE ESPAÑAs",
+            "genero":"Suspenso"
+        },
         ],
         "autorlibros": 
         {
+          //pendiente revisar esta parte, creo que ya no estaba hoy 30/sep/2016
             "10": [102, 105, 106],
             "20": [101],
             "30": [100],
@@ -117,8 +388,8 @@ var Biblioteca = (function () {
             "80": [104]
         }
     };
-    return {
-        "autores": BD.autores,
-        "libros": BD.libros
-    }
+return {
+    "autores": BD.autores,
+    "libros": BD.libros
+}
 })();

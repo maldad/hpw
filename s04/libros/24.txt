@@ -1,0 +1,24 @@
+{
+    "id":100,
+    "titulo":"Las batallas en el desierto",
+    "isbn":"6074450552",
+    "publicacion": "1998",
+    "editorial":"ERA",
+    "genero":"Novela contemporánea"
+},
+{
+    "id":101,
+    "titulo":"EL laberinto de la soledad",
+    "isbn":"968-16-1643-X",
+    "publicacion":"1950",
+    "editorial":"Fondo de Cultura Económica",
+    "genero":"Didactico"
+},
+{
+    "id":102,
+    "titulo":"La llama doble",
+    "isbn":"978-6070720451",
+    "publicacion": "1993",
+    "editorial":"SEIX BARRAL",
+    "genero":"Didactico"
+},

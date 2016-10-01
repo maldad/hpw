@@ -1,0 +1,12 @@
+Imprimir.autores(Biblioteca.autores)
+Busqueda.por_nombre(Biblioteca.autores, "agUSTin")
+
+Busqueda.por_apellido_materno(Biblioteca.autores, "blas")
+
+Imprimir.autores(
+Busqueda.por_apellido_paterno(Biblioteca.autores, "vasquez")
+)
+
+Imprimir.autores(
+Busqueda.por_apellido_materno(Biblioteca.autores, "garcia")
+)

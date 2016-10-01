@@ -1,0 +1,25 @@
+        
+{
+    "id": 109,
+    "titulo": "EL ALQUIMISTA",
+    "isbn": "9789707802971",
+    "publicacion": "1988",
+    "editorial": "GRIJALBO",
+    "genero": "MISION"
+},
+{
+    "id": 110,
+    "titulo": "LOS HORNOS DE HITLER",
+    "isbn": "9786070721786",
+    "publicacion": "1961",
+    "editorial": "BOOKET",
+    "genero": "EPICO"
+},
+{
+    "id": 111,
+    "titulo": "CABALLO DE TROYA 1",
+    "isbn": "9788408064626",
+    "publicacion": "2005",
+    "editorial": "PLANETA",
+    "genero": "NOVELA"
+},

@@ -1,0 +1,24 @@
+{
+    "id": 115,
+    "titulo": "La naranja mecanica",
+    "isbn": "978-607-07-0156-6",
+    "publicacion": 1962,
+    "editorial": "Minotauro",
+    "genero": "Ciencia Ficcion" 
+},
+{
+    "id": 116,
+    "titulo": "Cien años de soledad",
+    "isbn": "978-842-047-183-9",
+    "publicacion": 1967,
+    "editorial": "Diana",
+    "genero": "Realismo magico" 
+},
+{
+    "id": 117,
+    "titulo": "Alexandros",
+    "isbn": "978-970-810-355-8",
+    "publicacion": 1998,
+    "editorial": "Montena",
+    "genero": "Novela Historica" 
+},

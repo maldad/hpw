@@ -3,8 +3,8 @@ var Imprimir = (function() {
         for(var i = 0; i < arr_autores.length; i++){
             console.log("ID: " + arr_autores[i].id);
             console.log("Nombre: " + arr_autores[i].nombre);
-            console.log("Apellido paterno: " + arr_autores[i].apellido_paterno);
-            console.log("Apellido materno: " + arr_autores[i].apellido_materno);
+            console.log("Apellido paterno: " + arr_autores[i].apellido.paterno);
+            console.log("Apellido materno: " + arr_autores[i].apellido.materno);
             console.log("-----------------------------");
         }
     }

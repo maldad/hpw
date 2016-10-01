@@ -1,0 +1,29 @@
+{
+    "id": 130,
+    "titulo":"Fudación",
+    "isbn":"9788499083209",
+    "publicacion":"1952",
+    "editorial":"De Bolsillo",
+    "genero":"ficcion"
+  },
+  
+  {
+    "id": 131,
+    "titulo":"El gran diseño",
+    "isbn":"9788498921724",
+    "publicacion":"2010",
+    "editorial":"Bantam Books",
+    "genero":"ciencia"
+  },
+
+  {
+    "id": 132,
+    "titulo":"Un pacto con el diablo",
+    "isbn":"9789681660369",
+    "publicacion":"1999",
+    "editorial":"S.L. FONDO DE CULTURA ECONOMICA DE ESPAÑAs",
+    "genero":"Suspenso"
+  },
+
+  
+

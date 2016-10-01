@@ -1,0 +1,24 @@
+{
+    "id": 118,
+    "titulo": "Caida libre",
+    "isbn": "9788430615902",
+    "publicacion": 2010,
+    "editorial": "Taurus",
+    "genero": "Novela"
+},
+{
+    "id": 119,
+    "titulo": "Insurgente",
+    "isbn": "9788427203181",
+    "publicacion": 2012,
+    "editorial": "Molino",
+    "genero": "Novela"
+},
+{
+    "id": 120,
+    "titulo": "Juego de Tronos",
+    "isbn": "9788496208964",
+    "publicacion": 2012,
+    "editorial": "Gigamesh",
+    "genero": "Novela"
+},

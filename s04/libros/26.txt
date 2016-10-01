@@ -1,0 +1,24 @@
+{
+    "id":106,
+    "titulo":"Don quijote de la mancha",
+    "isbn":"60744501423",
+    "publicacion":"1980",
+    "editorial":"",
+    "genero":"Novela"
+},
+{
+    "id":107,
+    "titulo":"EL laberinto de la soledad",
+    "isbn":"968-16-16431434",
+    "publicacion":"2004",
+    "editorial":"Trillas",
+    "genero":"Historia"
+},
+{
+    "id":108,
+    "titulo":"La Tierra Gira",
+    "isbn":"978-6070720376",
+    "publicacion":"2013",
+    "editorial":"Trillas",
+    "genero":"Geografia"
+},

@@ -1,0 +1,24 @@
+{
+"id":124,
+"titulo":"La revolucion mesmerica",
+"isbn":"123-342-576-875-2",
+"publicacion":"2004",
+"editorial":"oaxacar",
+"genero":"misterio"
+},
+{
+"id":125,
+"titulo":"IT",
+"isbn":"999-445-357-246-3",
+"publicacion":"2002",
+"editorial":"Eso",
+"genero":"terror"
+},
+{
+"id":126,
+"titulo":"Misericordiae Voltus",
+"isbn":"978-607-714-145-7",
+"publicacion":"2015",
+"editorial":"San Pablo",
+"genero":"Religion"
+}   

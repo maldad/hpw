@@ -1,0 +1,25 @@
+{
+    "id":127,
+    "titulo":"Tokyo Blues",
+    "isbn":"C287364",
+    "publicacion": 2003,
+    "editorial":"Jisho",
+    "genero":["Drama","Suspenso"]
+},
+{
+    "id":128,
+    "titulo":"El principito",
+    "isbn":"X193485",
+    "publicacion": 1980,
+    "editorial":"Jcrox",
+    "genero":["Drama"]
+},
+{
+    "id":129,
+    "titulo":"El código de Da Vinci",
+    "isbn":"A192736",
+    "publicacion": 1987,
+    "editorial":"Socrax",
+    "genero":["Drama"]
+},
+        

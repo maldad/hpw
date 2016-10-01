@@ -1,0 +1,25 @@
+
+   {
+   "id":112,
+     "titulo":"Fundamentos de Administracion",
+     "isbn":"978-968-24-7785-0",
+     "publicacion":"2009",
+     "editorial":"Trillas",
+     "genero":"Academico"
+    },
+    {
+    "id":113,
+     "titulo":"Sistemas Operativos Modernos",
+     "isbn":"968-880-323-5",
+     "publicacion":"1992",
+     "editorial":"Prentice-Hall Mexico",
+     "genero":"Academico"
+    },
+    {
+    "id":114,
+     "titulo":"El viejo y el mar",
+     "isbn":"970-666-022-4",
+     "publicacion":"2005",
+     "editorial":"Tomo",
+     "genero":"Literario"
+    },
