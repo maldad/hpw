@@ -35,7 +35,7 @@ var Biblioteca = (function () {
                 "paterno": "Gomez",
                 "materno": "Oseguera"
             },
-            "libros": [106,108]
+            "libros": [106, 108]
         },
         {
             "id": 14,
@@ -44,7 +44,7 @@ var Biblioteca = (function () {
                 "paterno": "Carrasco",
                 "materno": "Lopez"
             },
-            "libros": [109,110,111]
+            "libros": [109, 110, 111]
         },
         {
             "id": 15,
@@ -53,7 +53,7 @@ var Biblioteca = (function () {
                 "paterno": "Garcia",
                 "materno": "Perez"
             },
-            "libros": [109,111]
+            "libros": [109, 111]
         },
         {
             "id": 16,
@@ -62,7 +62,7 @@ var Biblioteca = (function () {
                 "paterno": "Pablo",
                 "materno": "Ojeda"
             },
-            "libros": [115,116,117]
+            "libros": [115, 116, 117]
         },
         {
             "id": 17,
@@ -71,7 +71,7 @@ var Biblioteca = (function () {
                 "paterno": "Vasquez",
                 "materno": "Sierra"
             },
-            "libros": [118,119,120]
+            "libros": [118, 119, 120]
         },
         {
             "id": 18,
@@ -80,16 +80,16 @@ var Biblioteca = (function () {
                 "paterno": "Jarquin",
                 "materno": "Lara"
             },
-            "libros": [115,110]
+            "libros": [115, 110]
         },
         {
             "id": 19,
-            "nombre": "WIlfrido",
+            "nombre": "Wilfrido",
             "apellido": {
                 "paterno": "Santos",
                 "materno": "Lopez"
             },
-            "libros": [112,125]
+            "libros": [112, 125]
         },
         {
             "id": 20,
@@ -98,7 +98,7 @@ var Biblioteca = (function () {
                 "paterno": "Velasco",
                 "materno": "Cruz"
             },
-            "libros": [112,125]
+            "libros": [112, 125]
         },
         {
             "id": 21,
@@ -107,7 +107,7 @@ var Biblioteca = (function () {
                 "paterno": "Daniel",
                 "materno": "Olivera"
             },
-            "libros": [131,132]
+            "libros": [131, 132]
         }
         ],
         "libros": [
@@ -117,7 +117,7 @@ var Biblioteca = (function () {
             "isbn":"6074450552",
             "publicacion": "1998",
             "editorial":"ERA",
-            "genero":"Novela contemporánea"
+            "genero":"novela"
         },
         {
             "id":101,
@@ -125,7 +125,7 @@ var Biblioteca = (function () {
             "isbn":"968-16-1643-X",
             "publicacion":"1950",
             "editorial":"Fondo de Cultura Económica",
-            "genero":"Didactico"
+            "genero":"didactico"
         },
         {
             "id":102,
@@ -133,31 +133,31 @@ var Biblioteca = (function () {
             "isbn":"978-6070720451",
             "publicacion": "1993",
             "editorial":"SEIX BARRAL",
-            "genero":"Didactico"
+            "genero":"didactico"
         },
         {
             "id": 103,
             "titulo": "Moby-Dick",
-            "isbn": "1289378239",
-            "publicacion": "1851",
-            "editorial": "Richard Bentley",
-            "genero": "Novela",
+            "isbn": "6073135386",
+            "publicacion": "2015",
+            "editorial": "Penguin Random House",
+            "genero": "novela",
         },
         {
             "id": 104,
-            "titulo": "El Señor de los Anillos",
-            "isbn": "1020398",
-            "publicacion": "1954",
-            "editorial": "George Allen & Unwim",
-            "genero": "Novela",
+            "titulo": "El Señor de los Anillos: El retorno del rey",
+            "isbn": "6070712749",
+            "publicacion": "2012",
+            "editorial": "Planeta Pub Corp",
+            "genero": "novela",
         },
         {
             "id": 105,
             "titulo": "Choque de reyes",
-            "isbn": "28129300",
-            "publicacion": "1998",
-            "editorial": "Bantam Spectra",
-            "genero": "Novela",
+            "isbn": "6073108400",
+            "publicacion": "2015",
+            "editorial": "Penguin Random House",
+            "genero": "novela",
         },
         {
             "id":106,
@@ -165,7 +165,7 @@ var Biblioteca = (function () {
             "isbn":"60744501423",
             "publicacion":"1980",
             "editorial":"",
-            "genero":"Novela"
+            "genero":"novela"
         },
         {
             "id":107,
@@ -173,7 +173,7 @@ var Biblioteca = (function () {
             "isbn":"968-16-16431434",
             "publicacion":"2004",
             "editorial":"Trillas",
-            "genero":"Historia"
+            "genero":"historia"
         },
         {
             "id":108,
@@ -181,7 +181,7 @@ var Biblioteca = (function () {
             "isbn":"978-6070720376",
             "publicacion":"2013",
             "editorial":"Trillas",
-            "genero":"Geografia"
+            "genero":"geografia"
         },        
         {
             "id": 109,
@@ -189,7 +189,7 @@ var Biblioteca = (function () {
             "isbn": "9789707802971",
             "publicacion": "1988",
             "editorial": "GRIJALBO",
-            "genero": "MISION"
+            "genero": "mision"
         },
         {
             "id": 110,
@@ -205,7 +205,7 @@ var Biblioteca = (function () {
             "isbn": "9788408064626",
             "publicacion": "2005",
             "editorial": "PLANETA",
-            "genero": "NOVELA"
+            "genero": "novela"
         },
         {
             "id":112,
@@ -221,7 +221,7 @@ var Biblioteca = (function () {
             "isbn":"968-880-323-5",
             "publicacion":"1992",
             "editorial":"Prentice-Hall Mexico",
-            "genero":"Academico"
+            "genero":"academico"
         },
         {
             "id":114,
@@ -229,7 +229,7 @@ var Biblioteca = (function () {
             "isbn":"970-666-022-4",
             "publicacion":"2005",
             "editorial":"Tomo",
-            "genero":"Literario"
+            "genero":"literario"
         },
         {
             "id": 115,
@@ -237,7 +237,7 @@ var Biblioteca = (function () {
             "isbn": "978-607-07-0156-6",
             "publicacion": 1962,
             "editorial": "Minotauro",
-            "genero": "Ciencia Ficcion" 
+            "genero": "ficcion" 
         },
         {
             "id": 116,
@@ -245,7 +245,7 @@ var Biblioteca = (function () {
             "isbn": "978-842-047-183-9",
             "publicacion": 1967,
             "editorial": "Diana",
-            "genero": "Realismo magico" 
+            "genero": "realismo" 
         },
         {
             "id": 117,
@@ -253,7 +253,7 @@ var Biblioteca = (function () {
             "isbn": "978-970-810-355-8",
             "publicacion": 1998,
             "editorial": "Montena",
-            "genero": "Novela Historica" 
+            "genero": "novela" 
         },
         {
             "id": 118,
@@ -261,7 +261,7 @@ var Biblioteca = (function () {
             "isbn": "9788430615902",
             "publicacion": 2010,
             "editorial": "Taurus",
-            "genero": "Novela"
+            "genero": "novela"
         },
         {
             "id": 119,
@@ -269,7 +269,7 @@ var Biblioteca = (function () {
             "isbn": "9788427203181",
             "publicacion": 2012,
             "editorial": "Molino",
-            "genero": "Novela"
+            "genero": "novela"
         },
         {
             "id": 120,
@@ -277,7 +277,7 @@ var Biblioteca = (function () {
             "isbn": "9788496208964",
             "publicacion": 2012,
             "editorial": "Gigamesh",
-            "genero": "Novela"
+            "genero": "novela"
         },
         {
             "id": 121,
@@ -325,7 +325,7 @@ var Biblioteca = (function () {
             "isbn":"978-607-714-145-7",
             "publicacion":"2015",
             "editorial":"San Pablo",
-            "genero":"Religion"
+            "genero":"religion"
         },   
         {
             "id":127,
@@ -333,7 +333,7 @@ var Biblioteca = (function () {
             "isbn":"C287364",
             "publicacion": 2003,
             "editorial":"Jisho",
-            "genero":["Drama","Suspenso"]
+            "genero":"drama"
         },
         {
             "id":128,
@@ -341,7 +341,7 @@ var Biblioteca = (function () {
             "isbn":"X193485",
             "publicacion": 1980,
             "editorial":"Jcrox",
-            "genero":["Drama"]
+            "genero":"drama"
         },
         {
             "id":129,
@@ -349,7 +349,7 @@ var Biblioteca = (function () {
             "isbn":"A192736",
             "publicacion": 1987,
             "editorial":"Socrax",
-            "genero":["Drama"]
+            "genero":"drama"
         },
         {
             "id": 130,
@@ -375,7 +375,7 @@ var Biblioteca = (function () {
             "isbn":"9789681660369",
             "publicacion":"1999",
             "editorial":"S.L. FONDO DE CULTURA ECONOMICA DE ESPAÑAs",
-            "genero":"Suspenso"
+            "genero":"suspenso"
         },
         ],
         "autorlibros": 

@@ -10,6 +10,7 @@ var Imprimir = (function() {
     }
     var libros = function(arr_libros){
         for(var i = 0; i < arr_libros.length; i++){
+            console.log("ISBN: " + arr_libros[i].isbn);
             console.log("ID: " + arr_libros[i].id);
             console.log("Titulo: " + arr_libros[i].titulo);
             console.log("Publicacion: " + arr_libros[i].publicacion)

@@ -5,11 +5,11 @@
     (usando regex)
     (debido a que algunos apellidos y nombres tienen acentos)
 -> tambien por:
-    titulo libro
-    isbn
-    genero
-    año
+    titulo libro --- OK
+    isbn --- OK
+    genero --- OK
+    año --- OK, ??, well not OK
 
 Correcciones:
--> ISBN, debe ser real
--> dejar solamente 1 género, en minúsculas
+-> ISBN, debe ser real -- OK (for my books)
+-> dejar solamente 1 género, en minúsculas --- OK
