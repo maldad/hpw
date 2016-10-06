@@ -14,6 +14,22 @@ var Busqueda = (function () {
             return (autor.apellido.materno.toLowerCase() === buscar_apellido_materno.toLowerCase());
         }, arr_autores)
     };
+    var por_autor = function(arr_autores, buscar_autor){
+        return Arreglo.filter(function(autor) {
+            return (autor.nombre.toLowerCase() === buscar_autor.toLowerCase().trim() || 
+                    autor.apellido.paterno.toLowerCase() === buscar_autor.toLowerCase().trim() ||
+                    autor.apellido.materno.toLowerCase() === buscar_autor.toLowerCase().trim())
+        }, arr_autores)
+    };
+    var por_autor_regex = function(arr_autores, buscar_autor){
+        return Arreglo.filter(function(autor) {
+            //first trim...
+            buscar_autor = buscar_autor.trim();
+            //turn buscar_autor into a regex...
+            regex = new RegExp(buscar_autor, 'i')
+            return (regex.test(autor.nombre) || regex.test(autor.apellido.paterno) ||
+                    regex.test(autor.apellido.materno)) }, arr_autores)
+    };
     var por_libro = function(arr_libros, buscar_libro) {
         return Arreglo.filter(function(libro) {
             //return (libro.titulo.toLowerCase() === buscar_libro.toLowerCase())
@@ -46,6 +62,8 @@ var Busqueda = (function () {
         "por_libro": por_libro,
         "por_isbn": por_isbn,
         "por_genero": por_genero,
-        "por_publicacion": por_publicacion
+        "por_publicacion": por_publicacion,
+        "por_autor": por_autor,
+        "por_autor_regex": por_autor_regex
     };
 })();

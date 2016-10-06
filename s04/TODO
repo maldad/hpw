@@ -1,8 +1,8 @@
 -> agregar busquedas por:
-    nombre
-    apellido paterno
-    apellido materno
-    (usando regex)
+    nombre  OK
+    apellido paterno OK
+    apellido materno OK
+    (usando regex) OK
     (debido a que algunos apellidos y nombres tienen acentos)
 -> tambien por:
     titulo libro --- OK

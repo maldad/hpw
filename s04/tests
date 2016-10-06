@@ -10,3 +10,7 @@ Busqueda.por_apellido_paterno(Biblioteca.autores, "vasquez")
 Imprimir.autores(
 Busqueda.por_apellido_materno(Biblioteca.autores, "garcia")
 )
+
+Busqueda.por_autor_regex(Biblioteca.autores, 'agustin')
+Busqueda.por_autor_regex(Biblioteca.autores, 'vasquez')
+Busqueda.por_autor_regex(Biblioteca.autores, 'blas')
