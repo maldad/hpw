@@ -53,4 +53,10 @@ QUnit.test("Tests de sumatoria_hasta_el", function(assert) {
         0,
         "Sin parámetro"
     );
+    //10
+    assert.strictEqual(
+        Codigo.sumatoria_hasta_el(NaN),
+        0,
+        "NaN"
+    );
 });
