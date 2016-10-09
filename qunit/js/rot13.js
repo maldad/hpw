@@ -1,44 +1,27 @@
 var Rot13 = (function () {
-    var cifrar = function(texto){
-        var abc = ["A", "B", "C", "D", "E", "F",
-        "G", "H", "I", "J", "K", "L", "M",
-        "N", "O", "P", "Q", "R", "S", "T",
-        "U", "V", "W", "X", "Y", "Z"];
-        //no poner dobles letras porque estamos buscando por indice, entonces encuentra 2 indices iguales :/
-        var result = "";
-        for(var i = 0; i < texto.length; i++)
-            result = result + abc[abc.indexOf(texto[i]) + 13]; 
-            return result;
-        /*
-        if(texto === "A")
-            return "N";
-        if(texto === "B")
-            return "O";
-        if(texto === "C")
-            return "P";
-        if(texto === "D")
-            return "Q";
-        if(texto === "E")
-            return "R";
-        if(texto === "F")
-            return "S";
-        if(texto === "G")
-            return "T";
-        if(texto === "H")
-            return "U";
-        if(texto === "I")
-            return "V";
-        if(texto === "J")
-            return "W";
-        if(texto === "K")
-            return "X";
-        if(texto === "L")
-            return "Y";
-        if(texto === "M")
-            return "Z";
-            */
+    var abc = {
+        A: 'N', B: 'O', C: 'P', D: 'Q', E: 'R', F: 'S', G: 'T', H: 'U', I: 'V',
+        J: 'W', K: 'X', L: 'Y', M: 'Z', N: 'A', O: 'B', P: 'C', Q: 'D', R: 'E',
+        S: 'F', T: 'G', U: 'H', V: 'I', W: 'J', X: 'K', Y: 'L', Z: 'M',
+        a: 'n', b: 'o', c: 'p', d: 'q', e: 'r', f: 's', g: 't', h: 'u', i: 'v',
+        j: 'w', k: 'x', l: 'y', m: 'z', n: 'a', o: 'b', p: 'c', q: 'd', r: 'e',
+        s: 'f', t: 'g', u: 'h', v: 'i', w: 'j', x: 'k', y: 'l', z: 'm',
+        ' ': ' '
     };
+
+    var change = function(character) {
+        return abc[character];
+    };
+
+    var encrypt = function(string) {
+        var output = "";
+        for(var i = 0; i < string.length; i++)
+            output = output + change(string[i]);
+        return output;
+    }
+    
     return {
-        cifrar: cifrar
+        change: change,
+        encrypt: encrypt
     };
 })();

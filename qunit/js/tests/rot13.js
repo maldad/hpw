@@ -1,38 +1,34 @@
 QUnit.test("Tests de Rot13", function(assert) {
     //letra H
     assert.strictEqual(
-        Rot13.cifrar("A"),
+        Rot13.change("A"),
         "N",
         "A por N"
     );
     assert.strictEqual(
-        Rot13.cifrar("H"),
+        Rot13.change("H"),
         "U",
         "H por U"
     );
     assert.strictEqual(
-        Rot13.cifrar("C"),
-        "P",
-        "C por P"
+        Rot13.change("c"),
+        "p",
+        "c por p"
     );
     assert.strictEqual(
-        Rot13.cifrar("M"),
-        "Z",
-        "M por Z"
+        Rot13.change("m"),
+        "z",
+        "m por z"
     );
     assert.strictEqual(
-        Rot13.cifrar("G"),
-        "T",
-        "G por T"
-    );
-    assert.strictEqual(
-        Rot13.cifrar("AB"),
-        "NO",
-        "AB por NO"
-    );
-    assert.strictEqual(
-        Rot13.cifrar("HOLA"),
+        Rot13.encrypt("HOLA"),
         "UBYN",
         "HOLA por UBYN"
+    );
+
+    assert.strictEqual(
+        Rot13.encrypt("H"),
+        "U",
+        "H por U"
     );
 });
