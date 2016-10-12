@@ -1,0 +1,25 @@
+arr_entrada = [10, 11, 12, 13, 14];
+
+Arreglo.reduce(0, function(x, y){
+  return x + y;
+}, arr_entrada);
+
+Arreglo.reduce(1, function(x, y){
+  return x * y;
+}, arr_entrada);
+
+
+Arreglo.reduce([], function(x, y){
+  x.unshift(y);
+  return x;
+}, arr_entrada);
+
+Arreglo.reduce({}, function(x, y){
+  x[y] = y;
+  return x;
+}, arr_entrada)
+
+arr_2 = [[10, 20], [1, 2, 3], [30], [40, 50]]
+Arreglo.reduce(0, function(x, y){
+  return x + y.length;
+}, arr_2)
