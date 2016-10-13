@@ -17,6 +17,11 @@ var Arreglo = (function () {
         return vf;
     };
 
+    var forEach = function(f, arr_entrada){
+        for(var i = 0; i < arr_entrada.length, i++)
+            f(arr_entrada[i]);
+    };
+
     return {
         "filter": filter,
         "reduce": reduce
