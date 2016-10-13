@@ -10,6 +10,13 @@ var Arreglo = (function () {
         return arr_salida;
     };
 
+    var map = function(f, arr_entrada){
+        var arr_salida = [];
+        for (var i = 0; i < arr_entrada.length; i++)
+            arr_salida[i] = f(arr_entrada[i]);
+        return arr_salida;
+    }
+
     var reduce = function(vi, f, arr_entrada){
         var vf = vi;
         for(var i = 0; i < arr_entrada.length; i++)
@@ -18,12 +25,14 @@ var Arreglo = (function () {
     };
 
     var forEach = function(f, arr_entrada){
-        for(var i = 0; i < arr_entrada.length, i++)
+        for(var i = 0; i < arr_entrada.length; i++)
             f(arr_entrada[i]);
     };
 
     return {
         "filter": filter,
-        "reduce": reduce
+        "reduce": reduce,
+        "forEach": forEach,
+        "map": map
     };
 })();
