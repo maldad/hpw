@@ -1,0 +1,35 @@
+window.document.title
+
+document.title = 'hola mundo'
+
+document.getElementsByTagName('meta')
+document.getElementsByTagName('h1')
+document.getElementsByTagName('h1')[1].textContent = 'adios'
+
+document.getElementsByTagName('ul')[0].textContent = 'mundo'
+document.getElementsByTagName('li')
+
+document.getElementById('ele1')
+
+document.getElementsByName('titulo')
+
+//estructura de padres e hijos
+document.body
+document.body.firstChild
+document.body.firstElementChild
+
+document.body.lastChild
+document.body.lastElementChild
+//uno
+document.body.lastElementChild.firstElementChild
+//dos
+document.body.lastElementChild.firstElementChild.nextElementSibling
+//tres
+document.body.lastElementChild.lastElementChild
+
+document.body.firstElementChild.nextElementSibling
+//who is your father? Darth Vader?
+document.body.firstElementChild.parentElement
+//no, my father is body
+
+document.body.lastElementChild.children
