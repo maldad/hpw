@@ -1,0 +1,24 @@
+document.getElementsByTagName('table')
+document.getElementsByTagName('td')
+document.getElementsByTagName('tr')
+document.getElementsByTagName('thead')
+document.getElementsByTagName('tbody').children
+
+var tabla_datos = 
+    document.getElementById('datos');
+
+tabla_datos.children
+tabla_datos.children[0]
+//get all theads:
+tabla_datos.children[0].children[0].children
+
+var tabla_datos_cabecera =
+document.getElementById('datos_cabecera')
+//get all theads using:
+//a shorter way
+tabla_datos_cabecera.children
+
+//get td's
+tabla_datos_cuerpo = 
+  document.getElementById('datos_cuerpo')
+tabla_datos_cuerpo.children[0].children
