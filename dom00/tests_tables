@@ -22,3 +22,32 @@ tabla_datos_cabecera.children
 tabla_datos_cuerpo = 
   document.getElementById('datos_cuerpo')
 tabla_datos_cuerpo.children[0].children
+
+//18/oct/2016 12:42
+tabla_datos_cuerpo = 
+  document.getElementById('datos_cuerpo')
+
+tabla_datos_cuerpo.children[7].children
+
+tabla_datos_cabecera =
+  document.getElementById('datos_cabecera')
+
+tabla_datos_cabecera.children[2]
+
+datos_cabecera2 = 
+  tabla_datos_cabecera.children[1]
+
+datos_filas = tabla_datos_cuerpo.children[0].children[0]
+
+var select_rows = function(){
+    var datos_filas = [];
+  for(var i = 0; i < 10; i++){
+    datos_filas.push(tabla_datos_cuerpo.children[i].children[0]);
+  }
+  return datos_filas;
+}
+select_rows()
+//tabla_datos_cuerpo.children[3].children[1]
+var datos_col1 = [];
+for(var i = 0; i < 10; i++)
+  datos_col1.push(tabla_datos_cuerpo.children[i].children[3])
