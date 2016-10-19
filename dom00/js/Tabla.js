@@ -14,8 +14,20 @@ var Tabla = (function (){
             arr_salida.push(obj_tabla.children[1].rows[i].children[columna]);
         return arr_salida;
     }
+
+    var diagonal_abajo_derecha = function(obj_tabla, fila, columna){
+        var arr_salida = [];
+        var j = columna;
+        for(var i = fila - 1; i < obj_tabla.children[1].rows.length; i++){
+            arr_salida.push(obj_tabla.children[1].rows[i].children[j]);
+            j++;
+        }     
+        return arr_salida;
+    }
+
     return {
         "fila": fila,
-        "columna": columna
+        "columna": columna,
+        "diagonal_abajo_derecha": diagonal_abajo_derecha
     }
 })();
