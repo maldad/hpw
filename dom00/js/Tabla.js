@@ -57,10 +57,14 @@ var Tabla = (function (){
 
     var diagonales = function(obj_tabla, fila, columna){
         var arr_diagonales = [];
+        if(!existe(obj_tabla, fila, columna))
+            return [];
         arr_diagonales = arr_diagonales.concat(diagonal_abajo_derecha(obj_tabla, fila, columna));
         arr_diagonales = arr_diagonales.concat(diagonal_abajo_izquierda(obj_tabla, fila, columna));
         arr_diagonales = arr_diagonales.concat(diagonal_arriba_derecha(obj_tabla, fila, columna));
         arr_diagonales = arr_diagonales.concat(diagonal_arriba_izquierda(obj_tabla, fila, columna));
+        arr_diagonales = 
+        arr_diagonales.filter(function(item){return typeof item === 'object'}, arr_diagonales);
         return arr_diagonales;
     }
 
@@ -81,6 +85,8 @@ var Tabla = (function (){
 
     var vecinos = function(obj_tabla, i, j){
         arr_vecinos = [];
+        if(!existe(obj_tabla, i, j))
+            return [];
         //puede pushear undefined's
         arr_vecinos.push(celda(obj_tabla, i-1, j-1)) //a
         arr_vecinos.push(celda(obj_tabla, i-1, j))  //b
@@ -103,6 +109,7 @@ var Tabla = (function (){
         "diagonales": diagonales,
         "vecinos": vecinos,
         "existe": existe,
-        "celda": celda
+        "celda": celda,
+        "diagonal_abajo_izquierda": diagonal_abajo_izquierda
     }
 })();
