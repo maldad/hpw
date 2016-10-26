@@ -1,11 +1,8 @@
 var ImagesTable = (function () {
     var crear_imagenes = function(){
-        var imagen;
         var imgs = [];
-        for(var i = 0; i < 10; i++){
-            imagen = document.createElement('img')
-                imgs.push(imagen)
-        }
+        for(var i = 0; i < 10; i++)
+            imgs.push(document.createElement('img'));
         return imgs;
     };
 
@@ -16,6 +13,9 @@ var ImagesTable = (function () {
         }
         return arr_salida;
     };
+     var alterar_imagenes2 = function(arr_imgs){
+         Arreglo.map(function(td){return td.setAttribute('src', 'images/1.png')}, arr_imgs);
+     };
 
     var agregar_hijos_arriba = function(f1, hijos){
         for(var i = 0; i < f1.length; i++)
@@ -33,11 +33,12 @@ var ImagesTable = (function () {
     var agregar_hijos = function(fila, hijos){
         agregar_hijos_arriba(fila, hijos);
         agregar_hijos_abajo(fila, hijos);
-    }
+    };
 
-        return{
-            "crear_imagenes": crear_imagenes,
-            "alterar_imagenes": alterar_imagenes,
-            "agregar_hijos": agregar_hijos
-        }
+    return{
+        "crear_imagenes": crear_imagenes,
+        "alterar_imagenes": alterar_imagenes,
+        "alterar_imagenes2": alterar_imagenes2,
+        "agregar_hijos": agregar_hijos
+    }
 })();
