@@ -73,6 +73,31 @@ var Semantic = (function (){
         return boton;
     };
 
+    tabla = function(cabecera, datos){
+        var tabla = HTML.table(cabecera, datos);
+        tabla.setAttribute('class', 'ui celled striped table');
+        return tabla;
+    };
+
+    mensaje = function(texto){
+        var div = create('div');
+        var p = create('p');
+        div.setAttribute('class', 'ui floating message');
+        p.textContent = texto;
+        div.appendChild(p);
+        return div;
+    };
+
+    input = function(placeholder){
+        var div = create('div');
+        var input = create('input');
+        div.setAttribute('class', 'ui input');
+        input.setAttribute('placeholder', placeholder);
+        input.setAttribute('type', 'text');
+        div.appendChild(input);
+        return div;
+    };
+
     return {
         "boton": boton,
         "boton_primario": boton_primario,
@@ -81,5 +106,8 @@ var Semantic = (function (){
         "boton_led_negro": boton_led_negro,
         "boton_led_iluminar": boton_led_iluminar,
         "boton_coloreado": boton_coloreado,
+        'tabla': tabla,
+        'mensaje': mensaje,
+        'input': input
     };
 })();
