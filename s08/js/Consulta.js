@@ -30,6 +30,27 @@ var Consulta = (function (){
         tabla.setAttribute('border', '1');
         panel.appendChild(tabla);
     };
+    autor_nombre = function(autor){
+        var panel = document.getElementById('panel');
+        var header = ['id', 'nombre', 'ap_paterno', 'ap_materno'];
+        tabla = HTML.table(header, Tabla.busca_autor(Busqueda.por_nombre(Biblioteca.autores, autor)));
+        tabla.setAttribute('border', '1');
+        panel.appendChild(tabla);
+    };
+    autor_paterno = function(autor){
+        var panel = document.getElementById('panel');
+        var header = ['id', 'nombre', 'ap_paterno', 'ap_materno'];
+        tabla = HTML.table(header, Tabla.busca_autor(Busqueda.por_apellido_paterno(Biblioteca.autores, autor)));
+        tabla.setAttribute('border', '1');
+        panel.appendChild(tabla);
+    };
+    autor_materno = function(autor){
+        var panel = document.getElementById('panel');
+        var header = ['id', 'nombre', 'ap_paterno', 'ap_materno'];
+        tabla = HTML.table(header, Tabla.busca_autor(Busqueda.por_apellido_materno(Biblioteca.autores, autor)));
+        tabla.setAttribute('border', '1');
+        panel.appendChild(tabla);
+    };
     libro = function(libro){
         var panel = document.getElementById('panel');
         var header = ['isbn', 'id', 'titulo', 'publicacion', 'editorial', 'genero', 'imagen'];
@@ -51,7 +72,10 @@ var Consulta = (function (){
         "autores": autores,
         "libros": libros,
         "autor": autor,
-        "libro": libro
+        "libro": libro,
+        "autor_nombre": autor_nombre,
+        "autor_paterno": autor_paterno,
+        "autor_materno": autor_materno
     };
 })();
 

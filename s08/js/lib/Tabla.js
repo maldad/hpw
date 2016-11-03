@@ -46,7 +46,7 @@ var Tabla = (function(){
         }
         return arr_salida;
     };
-
+    
     var busca_libro = function(arr_libros){
         var arr_salida = [];
         var arr_libro = [];
