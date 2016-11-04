@@ -1,0 +1,9 @@
+table {
+    border: 1px solid red;
+    width: 500px;
+}
+
+table td {
+    border: 1px solid green;
+    height: 100px;
+}
