@@ -5,5 +5,20 @@ table {
 
 table td {
     border: 1px solid green;
-    height: 100px;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+.fondo-rojo {
+    background-color: red;
+}
+
+.fondo-azul {
+    background-color: blue;
+}
+
+.borde-grueso-azul {
+    border: 5px solid blue;
 }
