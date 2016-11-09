@@ -1,4 +1,4 @@
-var ClaseTablas = (function (){
+var ColorTablas = (function (){
 
     fila = function(objTabla, numFila, claseCss){
         var tbody = objTabla.children[1];
@@ -24,9 +24,21 @@ var ClaseTablas = (function (){
                 vecinos[i].setAttribute('class', claseCss);
     };
 
+    celda = function(objTabla, fila, columna, claseCss){
+        var celda = Tabla.celda(objTabla, fila, columna);
+        var notificacion = document.getElementById('notificacion');
+        if(celda.classList.contains(claseCss))
+            notificacion.textContent = 'Celda ya coloreada';
+        else{
+            notificacion.textContent = '';
+            celda.setAttribute('class', claseCss);
+        }
+    };
+
     return {
         'fila': fila,
         'columna': columna,
-        'vecinos': vecinos
+        'vecinos': vecinos,
+        'celda': celda
     };
 })();
