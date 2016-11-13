@@ -1,7 +1,7 @@
 var Mui = (function () {
 
     boton = function(texto){
-        var boton = HTMl.button(texto);
+        var boton = HTML.button(texto);
         boton.setAttribute('class', 'mui-btn mui-btn--raised');
         boton.textContent = texto;
         return boton;

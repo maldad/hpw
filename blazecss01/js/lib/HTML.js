@@ -10,6 +10,14 @@ var HTML = (function (){
                 _estado.textContent = _text;
                 return _envoltura;
             },
+            'set_attribute': function(_attribute, value){
+                _estado.setAttribute(_attribute, value);
+                return _envoltura;
+            },
+            'add_class': function(_class){
+                _estado.classList.add(_class);
+                return _envoltura;
+            },
             'element': function(){
                 return _estado;
             }

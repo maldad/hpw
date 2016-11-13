@@ -10,7 +10,22 @@ BlazeCSS.Button = (function(){
             'class': 'c-button'
         });
     };
+
+    var _error = function(){
+        return HTML.new_element('button', {
+            'class': 'c-button c-button--error'
+        });
+    };
+
+    var _ghost = function(){
+        return HTML.new_element('button', {
+            'class': 'c-button c-button--ghost'
+        });
+    };
+
     return {
-        'basic': _basic
+        'basic': _basic,
+        'error': _error,
+        'ghost': _ghost
     };
 })();
