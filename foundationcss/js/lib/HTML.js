@@ -46,28 +46,42 @@ var HTML = (function (){
         return nuevo_select;
     };
 
-    _button = function(texto){
-        var nuevo_button = document.createElement('button');
-        nuevo_button.textContent = texto;
-        return nuevo_button;
+    var _envolver = function(obj){
+        var _estado = obj;
+        var _envoltura = {
+            'set_id': function(_id){
+                _estado.setAttribute('id', _id);
+                return _envoltura;
+            },
+            'set_text': function(_text){
+                _estado.textContent = _text;
+                return _envoltura;
+            },
+            'set_attribute': function(_attribute, value){
+                _estado.setAttribute(_attribute, value);
+                return _envoltura;
+            },
+            'add_class': function(_class){
+                _estado.classList.add(_class);
+                return _envoltura;
+            },
+            'element': function(){
+                return _estado;
+            }
+        };
+        return _envoltura;
     };
 
-    _div = function(){
-        var nuevo_div = document.createElement('div');
-        return nuevo_div;
+    var _new_element = function(_etiqueta, _obj_atributos){
+        var nuevo_elemento = document.createElement(_etiqueta);
+        for(var atributo in  _obj_atributos)
+            nuevo_elemento.setAttribute(atributo, _obj_atributos[atributo]);
+        return _envolver(nuevo_elemento);
     };
-
-    _input = function(placeholder){
-        var nuevo_input = document.createElement('input');
-        nuevo_input.setAttribute('placeholder', placeholder);
-        return nuevo_input;
-    };
-
     return {
         "table": _table,
         'select': _select,
-        'button': _button,
-        'div': _div,
-        'input': _input
+        'new_element': _new_element
     };
+
 })();
