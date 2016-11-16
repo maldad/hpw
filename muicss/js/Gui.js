@@ -5,6 +5,7 @@ var GUI = (function () {
         var select = Mui.Form.select(meses, 'Mes').element();
         document.body.appendChild(select);
 
+        //y si hago un div y un input por separado y luego los uno?
         var input = Mui.Form.input('').element();
         input.firstChild.setAttribute('type', 'password');
         document.body.appendChild(input);
