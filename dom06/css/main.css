@@ -1,0 +1,8 @@
+table {
+    border: 3px solid red;
+    font-size: 48px;
+}
+
+table td {
+    border: 3px solid blue;
+}
