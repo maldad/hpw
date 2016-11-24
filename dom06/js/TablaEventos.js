@@ -1,6 +1,6 @@
-var Vecinos = (function(){
+var TablaEventos = (function(){
 
-    masUno = function() {
+    vecinos_mas_uno = function() {
         var tabla = document.getElementById('tabla');
         var f = function(oe){
             console.log(new Date());
@@ -40,7 +40,7 @@ var Vecinos = (function(){
         tabla.addEventListener('click', f, false)
     };
 
-    masUnoHorario = function() {
+    vecinos_mas_uno_sentido_horario = function() {
         var tabla = document.getElementById('tabla');
         var f = function(oe){
             console.log(new Date());
@@ -92,7 +92,7 @@ var Vecinos = (function(){
         tabla.addEventListener('dblclick', f, false)
     };
 
-    intercambiar = function(){
+    intercambiar_fila_arriba_abajo = function(){
         var tabla = document.getElementById('tabla');
         var f = function(oe){
             console.log(oe.originalTarget.tagName);
@@ -115,60 +115,67 @@ var Vecinos = (function(){
             }
             //intercambiar...
             var aux = vecinosArriba;
-            console.log(aux);
             console.log(vecinosArriba);
             console.log(vecinosAbajo);
+
             vecinosArriba[0].textContent = vecinosAbajo[0].textContent;
             vecinosArriba[1].textContent = vecinosAbajo[1].textContent;
             vecinosArriba[2].textContent = vecinosAbajo[2].textContent;
             vecinosAbajo[0].textContent = aux[0].textContent;
             vecinosAbajo[1].textContent = aux[1].textContent;
             vecinosAbajo[2].textContent = aux[2].textContent;
-        }
+        };
         tabla.addEventListener('click', f, false);
     };
 
 
-    quitaFila = function(){
+    quitar_fila = function(){
+        var tabla = document.getElementById('tabla');
+        var f = function(oe){
+            var elemento = oe.originalTarget;
+            // console.log(elemento);
+            if(elemento.tagName === 'TD'){
+                var tr = elemento.parentNode;
+                var tbody = tr.parentNode;
+                var trs = tbody.children;
+                tbody.removeChild(tr);
+                for(var i = 0; i < trs.length; i++){
+                    trs[i].children[0].textContent = i + 1;
+                };
+            };
+        };
+        tabla.addEventListener('click', f, false);
+    };
+
+    cambiar_color_2_veces = function(){
         var tabla = document.getElementById('tabla');
         var f = function(oe){
             var elemento = oe.originalTarget;
             console.log(elemento);
             if(elemento.tagName === 'TD'){
-                var tr = elemento.parentNode;
-                var tbody = elemento.parentNode.parentNode;
-                var trs = (tbody.children);
-                for(var i = 0; i < trs.length; i++){
-                    trs[i] = trs[i + 1];
+                if(elemento.style.backgroundColor === ''){
+                    elemento.style.backgroundColor = 'red';
+                }else{
+                    if(elemento.style.backgroundColor === 'red'){
+                        elemento.style.backgroundColor = 'green';
+                    }
                 }
-                tbody.removeChild(tr);
-            }
+            };
         };
-        tabla.addEventListener('click', f, false);
+
+        var tds = tabla.getElementsByTagName('td');
+        for(var i = 0; i < tds.length; i++){
+            tds[i].addEventListener('mouseenter', f, false);
+        };
     };
 
     return{
-        "masUno": masUno,
-        "masUnoHorario": masUnoHorario,
-        "intercambiar": intercambiar,
-        "quitafila": quitaFila
+        "vecinosMasUno": vecinos_mas_uno,
+        "vecinosMasUnoSentidoHorario": vecinos_mas_uno_sentido_horario,
+        "intercambiarFilaArribaAbajo": intercambiar_fila_arriba_abajo,
+        "quitaFila": quitar_fila,
+        "cambiarColor2veces": cambiar_color_2_veces
     };
 })();
 
 
-var tabla = document.getElementById('tabla');
-        var f = function(oe){
-          var elemento = oe.originalTarget;
-          console.log(elemento);
-          if(elemento.tagName === 'TD'){
-            if(elemento.style.backgroundColor === '')
-              elemento.style.backgroundColor = 'red';
-            else
-            if(elemento.style.backgroundColor === 'red')
-              elemento.style.backgroundColor = 'green';
-          }
-        };
-
-var tds = tabla.getElementsByTagName('td');
-for(var i = 0; i < tds.length; i++)
-  tds[i].addEventListener('mouseenter', f, false);

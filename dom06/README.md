@@ -7,3 +7,4 @@ algunos pueden quedarse registrados en memoria o mantener su estado)
 * Closure: encierra el estado de una variable dentro de una función
 * Bubling, Trigling: propagación de eventos (false o true en el último
 parámetro del addEventListener())
+* El texto de un <input> se obtiene con .value
