@@ -92,10 +92,83 @@ var Vecinos = (function(){
         tabla.addEventListener('dblclick', f, false)
     };
 
+    intercambiar = function(){
+        var tabla = document.getElementById('tabla');
+        var f = function(oe){
+            console.log(oe.originalTarget.tagName);
+            if(oe.originalTarget.tagName !== 'TD')
+                return;
+            var td = oe.originalTarget;
+            var vecinosArriba = [];
+            var vecinosAbajo = [];
+            //arriba
+            if(td.parentNode.previousElementSibling !== null){
+                vecinosArriba.push(td.parentNode.previousElementSibling.children[td.cellIndex - 1]);
+                vecinosArriba.push(td.parentNode.previousElementSibling.children[td.cellIndex]);
+                vecinosArriba.push(td.parentNode.previousElementSibling.children[td.cellIndex + 1]);
+            }
+            //abajo
+            if(td.parentNode.nextElementSibling !== null){
+                vecinosAbajo.push(td.parentNode.nextElementSibling.children[td.cellIndex - 1]);
+                vecinosAbajo.push(td.parentNode.nextElementSibling.children[td.cellIndex]);
+                vecinosAbajo.push(td.parentNode.nextElementSibling.children[td.cellIndex + 1]);
+            }
+            //intercambiar...
+            var aux = vecinosArriba;
+            console.log(aux);
+            console.log(vecinosArriba);
+            console.log(vecinosAbajo);
+            vecinosArriba[0].textContent = vecinosAbajo[0].textContent;
+            vecinosArriba[1].textContent = vecinosAbajo[1].textContent;
+            vecinosArriba[2].textContent = vecinosAbajo[2].textContent;
+            vecinosAbajo[0].textContent = aux[0].textContent;
+            vecinosAbajo[1].textContent = aux[1].textContent;
+            vecinosAbajo[2].textContent = aux[2].textContent;
+        }
+        tabla.addEventListener('click', f, false);
+    };
+
+
+    quitaFila = function(){
+        var tabla = document.getElementById('tabla');
+        var f = function(oe){
+            var elemento = oe.originalTarget;
+            console.log(elemento);
+            if(elemento.tagName === 'TD'){
+                var tr = elemento.parentNode;
+                var tbody = elemento.parentNode.parentNode;
+                var trs = (tbody.children);
+                for(var i = 0; i < trs.length; i++){
+                    trs[i] = trs[i + 1];
+                }
+                tbody.removeChild(tr);
+            }
+        };
+        tabla.addEventListener('click', f, false);
+    };
+
     return{
         "masUno": masUno,
-        "masUnoHorario": masUnoHorario
+        "masUnoHorario": masUnoHorario,
+        "intercambiar": intercambiar,
+        "quitafila": quitaFila
     };
 })();
 
 
+var tabla = document.getElementById('tabla');
+        var f = function(oe){
+          var elemento = oe.originalTarget;
+          console.log(elemento);
+          if(elemento.tagName === 'TD'){
+            if(elemento.style.backgroundColor === '')
+              elemento.style.backgroundColor = 'red';
+            else
+            if(elemento.style.backgroundColor === 'red')
+              elemento.style.backgroundColor = 'green';
+          }
+        };
+
+var tds = tabla.getElementsByTagName('td');
+for(var i = 0; i < tds.length; i++)
+  tds[i].addEventListener('mouseenter', f, false);
