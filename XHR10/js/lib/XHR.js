@@ -5,8 +5,9 @@ var XHR = (function() {
                 console.log(xhr.status);
                 if(xhr.status >= 200 && xhr.status <= 299){
                     _obj_parametros.en_caso_de_exito(xhr.responseText);
+                    console.log(xhr.responseText);
                 }else{
-                    _obj_parametros.en_caso_de_error(xhr.responseText);
+                    _obj_parametros.en_caso_de_error();
                 }
             }
         };
@@ -17,6 +18,7 @@ var XHR = (function() {
         var url = _obj_parametros.url + '?r=' + Math.random();
         xhr.open('GET', url);
         xhr.send();
+        console.log(xhr.responseText);
     };
     return {
         'get': _get
