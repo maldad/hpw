@@ -8,13 +8,3 @@ var Codigo = (function () {
         pdf: pdf
     };
 })();
-
-//var Codigo = (function () { //this function is an argument
-//    var some = function () {
-//        //your JS code
-//    };
-//    return {
-//        access: var,
-//        //some: some
-//    }
-//})();
