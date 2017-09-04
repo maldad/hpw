@@ -48,55 +48,41 @@ var PintaTabla = (function () {
             var elemento = oe.originalTarget;
             var tecla = oe.key;
             if(tecla === 'w'){
-                console.log(tdinicio);
-
-                tdinicio.parentNode.previousElementSibling.
-                    children[tdinicio.cellIndex].
+                tdinicio.parentNode.previousElementSibling.children[tdinicio.cellIndex].
                     style.backgroundColor = 'red';
 
                 tdinicio = tdinicio.parentNode.previousElementSibling.
-                    children[tdinicio.cellIndex]
-
-                    console.log(tdinicio);
+                  children[tdinicio.cellIndex]
             }
             if(tecla === 's'){
-                console.log(tdinicio);
-
-                tdinicio.parentNode.nextElementSibling.
-                    children[tdinicio.cellIndex].
+                tdinicio.parentNode.nextElementSibling.children[tdinicio.cellIndex].
                     style.backgroundColor = 'red';
 
-                tdinicio = tdinicio.parentNode.nextElementSibling.
-                    children[tdinicio.cellIndex];
-
-                console.log(tdinicio);
+                tdinicio = tdinicio.parentNode.nextElementSibling.children[tdinicio.cellIndex];
             }
             if(tecla === 'a'){
-                console.log(tdinicio);
-
                 tdinicio.previousElementSibling.style.backgroundColor = 'red';
                 tdinicio = tdinicio.previousElementSibling;
-
-                console.log(tdinicio);
-
             }
             if(tecla === 'd'){
-                console.log(tdinicio);
-
                 tdinicio.nextElementSibling.style.backgroundColor = 'red';
                 tdinicio = tdinicio.nextElementSibling;
-
-                console.log(tdinicio);
             }
         };
 
         var pestaña = window;
-        pestaña.addEventListener('keypress', a, false);
+        window.addEventListener('keypress', a, false);
     };
+
+    main = function(){
+      click_en_celda();
+      wasd();
+    }
 
     return {
         "conClicArribaYAbajo": click_en_celda,
-        "conWASD": wasd
+        "conWASD": wasd,
+        "main" : main
     }
 })();
 // var a  = function(oe){
