@@ -1,3 +1,4 @@
+//este script sirve para apuntar a las filas y columnas de una celda en una tabla HTML
 var Tabla = (function (){
     var fila = function(obj_tabla, fila){
         var cuerpo = obj_tabla.children[1];

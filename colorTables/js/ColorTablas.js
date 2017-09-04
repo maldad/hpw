@@ -1,19 +1,20 @@
 var ColorTablas = (function (){
 
-    fila = function(objTabla, numFila, claseCss){
+    fila = function(objTabla, numFila, color){
         var tbody = objTabla.children[1];
-        var tr = tbody.children[numFila -1 ];
+        var tr = tbody.children[numFila - 1 ];
         var tds = tr.children;
-        for(var i = 0; i < tds.length; i++)
-            tds[i].setAttribute('class', claseCss);
+        for(var i = 0; i < tds.length; i++){
+            tds[i].style.backgroundColor = color;
+        }
     };
 
-    columna = function(objTabla, numColumna, claseCss){
+    columna = function(objTabla, numColumna, color){
         var tbody = objTabla.children[1];
         var trs = tbody.children;
         for(var i = 0; i < trs.length; i++){
             var td = trs[i].children[numColumna - 1];
-            td.setAttribute('class', claseCss)
+            td.style.backgroundColor = color;
         }
     };
 

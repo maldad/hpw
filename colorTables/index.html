@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title id='titulo'>colorTablas</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/lib/ColorTablas.js"></script>
     <script src="js/lib/Tabla.js"></script>
+    <script src="js/ColorTablas.js"></script>
+    <script src="js/Interfaz.js"></script>
 </head>
-<body>
-    <input type="number" id='fila'>
-    <input type="number" id='columna'>
-    <!-- <input type="color" id='color'> -->
+<body onload=Interfaz.main()>
+    <input type="number" id="inputfila">
+    <input type="number" id="inputcolumna">
+    <input type="color" id="color">
+    <br>
+    <input type="checkbox" id="checkFila">Fila</input>
+    <input type="checkbox" id="checkColumna">Columna</input>
+    <input type="checkbox" id="checkVecinos">Vecinos</input>
+    <input type="checkbox" id="checkCelda">Celda</input>
+    <br>
+    <button id=button1>Aceptar</button>
     <p id="notificacion"></p>
     <table id='tablon'>
         <thead></thead>
