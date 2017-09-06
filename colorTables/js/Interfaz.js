@@ -16,6 +16,12 @@ var Interfaz = (function(){
     if(checkColumna.checked){
       ColorTablas.columna(tabla, columna, color);
     }
+    if(checkVecinos.checked){
+      ColorTablas.vecinos(tabla, fila, columna, color);
+    }
+    if(checkCelda.checked){
+      ColorTablas.celda(tabla, fila, columna, color);
+    }
   }
 
   main = function(){

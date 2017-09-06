@@ -18,28 +18,22 @@ var ColorTablas = (function (){
         }
     };
 
-    vecinos = function(objTabla, fila, columna, claseCss){
+    vecinos = function(objTabla, fila, columna, color){
         var vecinos = Tabla.vecinos(objTabla, fila, columna);
-        for(var i = 0; i < vecinos.length; i++)
-            if(vecinos[i].getAttribute('class') === null)
-                vecinos[i].setAttribute('class', claseCss);
-    };
-
-    celda = function(objTabla, fila, columna, claseCss){
-        var celda = Tabla.celda(objTabla, fila, columna);
-        var notificacion = document.getElementById('notificacion');
-        if(celda.classList.contains(claseCss))
-            notificacion.textContent = 'Celda ya coloreada';
-        else{
-            notificacion.textContent = '';
-            celda.setAttribute('class', claseCss);
+        for(var i = 0; i < vecinos.length; i++){
+          vecinos[i].style.backgroundColor = color;
         }
     };
 
+    celda = function(objTabla, fila, columna, color){
+        var celda = Tabla.celda(objTabla, fila, columna);
+        celda.style.backgroundColor = color;
+    };
+
     return {
-        'fila': fila,
-        'columna': columna,
-        'vecinos': vecinos,
-        'celda': celda
+        "fila": fila,
+        "columna": columna,
+        "vecinos": vecinos,
+        "celda": celda
     };
 })();
