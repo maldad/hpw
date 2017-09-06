@@ -3,8 +3,9 @@ var XHR = (function (){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
       if(xhr.readyState === 4 && xhr.status === 200){
-        var myjson = JSON.parse(xhr.responseText);
-        Procesar.procesar(myjson);
+        // var myjson = JSON.parse(xhr.responseText);
+        // Procesar.procesar(myjson);
+        // do something :)
         console.log(xhr.responseText);
       }
     };
