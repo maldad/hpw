@@ -19,6 +19,15 @@ class Square extends React.Component {
         //creí que manejaríamos la inserción de 'O' desde aquí
         //con una especie de IF, sin embargo no es así
         //el estado del juego va cambiar hacia Board
+      // Mi idea en general es:
+      // Mantener en una variable el "lastState", que seria
+      // el último símbolo jugado, pero después de leer Lifting State Up
+      // viene el capítulo de Inmutabilidad, algo interesante ya que en
+      // react se utilizan funciones puras
+      // entrada -> salida
+      // Sin alterar cosas que estén fuera de su alcance
+      // En ese caso, vamos a RECIBIR un estado del Board, pasarlo a la
+      // función que maneja un evento de clic y DEVOLVER un nuevo estado
       >
         {this.state.value}
       </button>
