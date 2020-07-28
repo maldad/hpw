@@ -16,6 +16,9 @@ class Square extends React.Component {
       <button
         className="square"
         onClick={() => this.setState({value: 'X'})}
+        //creí que manejaríamos la inserción de 'O' desde aquí
+        //con una especie de IF, sin embargo no es así
+        //el estado del juego va cambiar hacia Board
       >
         {this.state.value}
       </button>
