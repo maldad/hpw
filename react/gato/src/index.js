@@ -2,20 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Square extends React.Component {
-  // Para que nuestro componente "recuerde" que se hizo
-  // un click usaremos el "state"
-  render() {
-    return (
-      <button
-        className="square"
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-      // me regresa un cuadro de acuerdo a las propiedades que le pasé
-    );
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
+
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
   }
+  return null;
+}
   //creí que manejaríamos la inserción de 'O' desde aquí
   //con una especie de IF, sin embargo no es así
   //el estado del juego va cambiar hacia Board
@@ -28,20 +41,30 @@ class Square extends React.Component {
 // Sin alterar cosas que estén fuera de su alcance
 // En ese caso, vamos a RECIBIR un estado del Board, pasarlo a la
 // función que maneja un evento de clic y DEVOLVER un nuevo estado
-}
 
 class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      squares: Array(9).fill(null) // este será nuestro estado inicial (9 cuadros vacios)
+      squares: Array(9).fill(null), // este será nuestro estado inicial (9 cuadros vacios)
+      xIsNext: true,
     };
   }
 
   handleClick(i) {
     const squares = this.state.squares.slice();
-    squares[i] = 'X';
-    this.setState({squares: squares});
+    // ¿cómo funciona const?
+    // The value  of a constant can't be changed throught reassignment, neither can be redeclared
+    // No podemos hacer: const n = [1,2,3], n = [4];
+    // Pero podemos: const n = [1,2,3], n[0] = 4 => [4,2,3]
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    });
     // toma el estado actual, lo altera y setea uno nuevo
   }
 
@@ -53,11 +76,16 @@ class Board extends React.Component {
         onClick={() => this.handleClick(i)}
       />
     );
-    return <Square value={this.state.squares[i]} />;
   }
 
   render() {
-    const status = 'Next player: X';
+    const winner = calculateWinner(this.state.squares);
+    let status;
+    if (winner) {
+      status = 'Winner: ' + winner;
+    } else {
+      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+    }
 
     return (
       <div>
